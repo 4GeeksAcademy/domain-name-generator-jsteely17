@@ -1,11 +1,12 @@
-/* eslint-disable */
-import "bootstrap";
-import "./style.css";
+let pronoun = ["the", "our", "his"];
+let adj = ["great", "big", "amazing"];
+let noun = ["jogger", "racoon", "dog", "merchant", "driver"];
 
-import "./assets/img/rigo-baby.jpg";
-import "./assets/img/4geeks.ico";
-
-window.onload = function() {
-  //write your code here
-  console.log("Hello Rigo from the console!");
-};
+// generating the domains
+for (let i = 0; i < pronoun.length; i++) {
+  for (let a = 0; a < adj.length; a++) {
+    for (let n = 0; n < noun.length; n++) {
+      console.log(pronoun[i] + adj[a] + noun[n] + ".com");
+    }
+  }
+}
